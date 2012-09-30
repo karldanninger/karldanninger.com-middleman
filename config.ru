@@ -1,9 +1,4 @@
-require 'rack'
-require 'rack/contrib/try_static'
+require 'rubygems'
+require 'middleman/rack'
 
-use ::Rack::TryStatic,
-  :root => "build",     # where middleman files are generated
-  :urls => %w[/]          # match all requests
-  :try => ['.haml', '.html', 'index.html', 'index.html.haml', /index.html'] # try these postfixes sequentially
-# 404
-run lambda { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}
+run Middleman.server

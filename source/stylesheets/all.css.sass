@@ -1,7 +1,8 @@
 @charset "utf-8"
-
+@import compass/css3
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700)
 @import url(http://fonts.googleapis.com/css?family=Bitter)
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic)
 
 body
   background: #d4d4d4 url("../images/background.png")
@@ -10,26 +11,44 @@ body
 
 h1
   color: #000
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.4)
   display: inline-block
   font-weight: bold
   font-size: 32px
   letter-spacing: -2px
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
-  padding: 250px 0 10px
+  padding: 20px 0 10px
   margin: 0
 
 h2
   color: #000
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.4)
   display: inline-block
   font-weight: normal
   font-size: 34px
   letter-spacing: -3px
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
-  padding: 350px 0 10px
+  padding: 20px 0 10px
   margin: 0
 
+.quote
+  font-size: 20px
+  font-family: 'Vollkorn', serif
+  font-style: italic
+  color: #888
+  
+.me 
+  margin-top: 240px
+  margin-left: auto
+  margin-right: auto
+  background: url('/images/karl.png')
+  background-size: 100px 100px
+  width: 100px
+  height: 100px
+  +border-radius(100px)
+  border: 4px solid #efefef
+  +box-shadow(0px 2px 6px rgba(0,0,0,0.4))
+  
 .doc
   font-size: 14px
   margin: 0
@@ -40,18 +59,19 @@ h2
     position: relative
     content: "•"
   a
-    color: rgba(0, 0, 0, 0.3)
+    color: rgba(0, 0, 0, 0.5)
+    text-decoration: none
     &:hover
-      color: #666
+      color: #444
 
 p
   margin-top: 30px
   font-family: 'Bitter'
-  color: #888
+  color: #777
   a
-    color: rgba(0, 0, 0, 0.3)
+    color: rgba(0, 0, 0, 0.45)
     &:hover
-      color: #888
+      color: #494949
     
 
 .welcome

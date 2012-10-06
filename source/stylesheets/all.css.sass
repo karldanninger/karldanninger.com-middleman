@@ -1,5 +1,6 @@
 @charset "utf-8"
 @import compass/css3
+@import animate.sass
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700)
 @import url(http://fonts.googleapis.com/css?family=Bitter)
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic)
@@ -37,7 +38,9 @@ h2
   font-style: italic
   color: #888
   
-.me 
+.me
+  display: block
+   
   margin-top: 240px
   margin-left: auto
   margin-right: auto
@@ -72,12 +75,10 @@ p
     color: rgba(0, 0, 0, 0.45)
     &:hover
       color: #494949
-    
 
 .welcome
-  -webkit-animation-name: welcome
-  -webkit-animation-duration: .9s
-
+  +experimental(animation, welcome 0.9s ease-out)
+  +animate(bounceIn, 0.9s, 0.9s)
 @-webkit-keyframes welcome
   from
     -webkit-transform: scale(0)

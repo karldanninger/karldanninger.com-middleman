@@ -11,6 +11,7 @@ body
   font-family: 'Ubuntu', sans-serif
 
 h1
+  +animate(fadeIn, 1.3s, 1.3s)
   color: #000
   color: rgba(0, 0, 0, 0.4)
   display: inline-block
@@ -22,6 +23,7 @@ h1
   margin: 0
 
 h2
+  +animate(fadeIn, 1.3s, 1.3s)
   color: #000
   color: rgba(0, 0, 0, 0.4)
   display: inline-block
@@ -33,6 +35,7 @@ h2
   margin: 0
 
 .quote
+  +animate(fadeIn, 1.3s, 1.3s)
   font-size: 20px
   font-family: 'Vollkorn', serif
   font-style: italic
@@ -40,7 +43,6 @@ h2
   
 .me
   display: block
-   
   margin-top: 240px
   margin-left: auto
   margin-right: auto
@@ -68,6 +70,7 @@ h2
       color: #444
 
 p
+  +animate(fadeIn, 1.3s, 1.3s)
   margin-top: 30px
   font-family: 'Bitter'
   color: #777
@@ -78,7 +81,7 @@ p
 
 .welcome
   +experimental(animation, welcome 0.9s ease-out)
-  +animate(bounceIn, 0.7s, 0.7s)
+  +animate(fadeInUp, 0.7s, 0.7s)
 @-webkit-keyframes welcome
   from
     -webkit-transform: scale(0)
